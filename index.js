@@ -10,8 +10,7 @@ Maybe.prototype.value = function value() {
 };
 
 Maybe.prototype.get = function get(key) {
-  var newValue = this._value && this._value[key];
-  return new Maybe(newValue);
+  return new Maybe(this._getValueOf(key));
 };
 
 Maybe.prototype.apply = function apply(key, args) {
