@@ -4,6 +4,10 @@ My take on a maybe monad for JavaScript after reading [this](http://codon.com/re
 
 Maybs works by providing a wrapping a value, and providing methods to access its properties. It's handy for digging deep into an object without making null checks along the way.
 
+```shell
+npm install maybs
+```
+
 ```js
 var maybe = require('maybs');
 
@@ -49,6 +53,6 @@ Tries to call value[key](arg1, arg2...) and returns the result wrapped in a new 
 
 Tries to call value[key](arg1, arg2...) and returns the result wrapped in a new `Maybe`.
 
-## `value()`
+## `#value()`
 
 Unwrap the `Maybe`, returns the value or `undefined`.
