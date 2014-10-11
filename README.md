@@ -26,10 +26,10 @@ maybe(val).get('aValue').value();
 maybe(val).get('aValue').get('aNestedValue').value();
 // >> 123
 
-maybe(val).call('aFunction', 1, 2);
+maybe(val).call('aFunction', 1, 2).value();
 // >> 3
 
-maybe(val).apply('aFunction', [1, 2]);
+maybe(val).apply('aFunction', [1, 2]).value();
 // >> 3
 
 maybe(val)
@@ -47,11 +47,11 @@ Returns a new `Maybe` wrapper for the value's key (or nothing).
 
 ## `#call(key, arg1, arg2...)`
 
-Tries to call value[key](arg1, arg2...) and returns the result wrapped in a new `Maybe`.
+Tries to call `value[key](arg1, arg2...)` and returns the result wrapped in a new `Maybe`.
 
 ## `#apply(key, [arg1, arg2...])`
 
-Tries to call value[key](arg1, arg2...) and returns the result wrapped in a new `Maybe`.
+Tries to call `value[key](arg1, arg2...)` and returns the result wrapped in a new `Maybe`.
 
 ## `#value()`
 
