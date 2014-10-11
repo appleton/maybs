@@ -1,0 +1,16 @@
+{
+  "name": "maybs",
+  "version": "0.0.1",
+  "description": "Maybe monad for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jshint . && ./node_modules/.bin/mocha"
+  },
+  "author": "Andrew Appleton",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "jshint": "^2.5.6",
+    "mocha": "^1.21.4"
+  }
+}
