@@ -2,7 +2,7 @@
 
 My take on a maybe monad for JavaScript after reading [this](http://codon.com/refactoring-ruby-with-monads). It may or may not actually be correct, but it is useful.
 
-Maybs works by providing a wrapping a value, and providing methods to access its properties. It's handy for digging deep into an object without making null checks along the way.
+Maybs works by wrapping a value, and providing methods to access its properties. It's handy for digging deep into an object without making null checks along the way.
 
 ```shell
 npm install maybs
